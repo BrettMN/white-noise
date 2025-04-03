@@ -1,0 +1,21 @@
+{
+  "name": "white-noise",
+  "version": "1.0.0",
+  "description": "plays white noise on a loop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrettMN/white-noise.git"
+  },
+  "author": "BrettMN <brettmn@wipdeveloper.com> (https://wipdeveloper.com)",
+
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrettMN/white-noise/issues"
+  },
+  "homepage": "https://github.com/BrettMN/white-noise#readme"
+}
