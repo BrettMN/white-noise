@@ -57,22 +57,20 @@
         const playButton = document.getElementById('playButton');
         const whiteNoise0 = document.getElementById('whiteNoise0');
         const whiteNoise1 = document.getElementById('whiteNoise1');
+        let secondAudioTimeout = null;
         playButton.addEventListener('click', () => {
             if (whiteNoise0.paused) {
-                playButton.disabled = true;
-                playButton.textContent = 'Loading...';
+                playButton.textContent = 'Stop White Noise';
                 whiteNoise0.play();
 
-                setTimeout(()=>{
+            secondAudioTimeout =    setTimeout(()=>{
                     whiteNoise1.play();
-
-                    playButton.disabled = false;
-                    playButton.textContent = 'Stop White Noise';
                 }, 2500);
 
 
 
             } else {
+                clearTimeout(secondAudioTimeout);
                 whiteNoise0.pause();
                 whiteNoise1.pause();
                 playButton.textContent = 'Play White Noise';
