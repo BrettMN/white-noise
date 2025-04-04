@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>White Noise</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
+  <meta charset="UTF-8">
+  <title>White Noise</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f0f0f0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 0;
+          padding-top: 20vh;
+      }
 
-        h1 {
-            color: #333;
-        }
+      h1 {
+          color: #333;
+      }
 
-        p {
-            color: #666;
-        }
+      p {
+          color: #666;
+      }
 
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #603be8;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s, transform 0.3s;
-        }
+      button {
+          padding: 10px 20px;
+          font-size: 16px;
+          color: #fff;
+          background-color: #603be8;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s, color 0.3s, transform 0.3s;
+      }
 
-        button:hover {
-            background-color: #412698;
-        }
+      button:hover {
+          background-color: #412698;
+      }
 
-        button:disabled {
-            background-color: #ccc;
-            cursor: not-allowed;
-        }
-    </style>
+      button:disabled {
+          background-color: #ccc;
+          cursor: not-allowed;
+      }
+
+      @media (max-width: 600px) {
+          h1 {
+              font-size: 2.5em;
+          }
+
+          button {
+              font-size: 14px;
+              padding: 10px;
+          }
+      }
+  </style>
 </head>
 <body>
 
@@ -50,12 +61,12 @@
 <p>Click the button to play white noise.</p>
 <button id="playButton">Play White Noise</button>
 <audio id="whiteNoise0" loop>
-    <source src="sounds/soothing-deep-noise.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
+  <source src="sounds/soothing-deep-noise.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
 </audio>
 <audio id="whiteNoise1" loop>
-    <source src="sounds/soothing-deep-noise.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
+  <source src="sounds/soothing-deep-noise.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
 </audio>
 
 <script>
